@@ -85,7 +85,7 @@ class zhStatus extends HTMLElement {
 
   async data() {
     const { pages } = await this.fetch(
-      `https://zeroheight.com/open_api/v2/pages/?styleguide_id=${zhAPI.styleguide}`
+      `https://zeroheight.com/open_api/v2/styleguides/${zhAPI.styleguide}/pages`
     );
     const { page_statuses } = await this.fetch(
       `https://zeroheight.com/open_api/v2/page_statuses`
