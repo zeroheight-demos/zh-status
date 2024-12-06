@@ -13,8 +13,8 @@ General usage example:
 
 <script>
   const zhAPI = {
-    key: "zhat_6EuAaaw0lUQ-zGW-t1ehRQzIQpwZGa3X8d3DU0L7",
-    client: "zhci_N2LaYV4Na37nvOzm13Q3F8N4nMWsIJe_QXhF2ToW",
+    key: "zhat_VuWPCQcW78XRw4ufLt3FTdJ8AIyGz5ff-q6jGLcG",
+    client: "zhci_5rSLVtpSHA28sk9Li2TpGRIVtSejhfIIRbRBkBgC",
     styleguide: 114183,
   };
 </script>
@@ -40,8 +40,8 @@ After choosing one of these options you'll need to attain an API Key, Access Tok
 
 ```js
 const zhAPI = {
-  key: "zhat_6EuAaaw0lUQ-zGW-t1ehRQzIQpwZGa3X8d3DU0L7",
-  client: "zhci_N2LaYV4Na37nvOzm13Q3F8N4nMWsIJe_QXhF2ToW",
+  key: "zhat_VuWPCQcW78XRw4ufLt3FTdJ8AIyGz5ff-q6jGLcG",
+  client: "zhci_5rSLVtpSHA28sk9Li2TpGRIVtSejhfIIRbRBkBgC",
   styleguide: 114183,
 };
 ```
@@ -54,8 +54,8 @@ Make sure you include the `<script>` in your project (choose one of these):
 <!-- Host yourself -->
 <script>
   const zhAPI = {
-    key: "zhat_6EuAaaw0lUQ-zGW-t1ehRQzIQpwZGa3X8d3DU0L7",
-    client: "zhci_N2LaYV4Na37nvOzm13Q3F8N4nMWsIJe_QXhF2ToW",
+    key: "zhat_VuWPCQcW78XRw4ufLt3FTdJ8AIyGz5ff-q6jGLcG",
+    client: "zhci_5rSLVtpSHA28sk9Li2TpGRIVtSejhfIIRbRBkBgC",
     styleguide: 114183,
   };
 </script>
@@ -67,8 +67,8 @@ Make sure you include the `<script>` in your project (choose one of these):
 <!-- 3rd party CDN, not recommended for production use -->
 <script>
   const zhAPI = {
-    key: "zhat_6EuAaaw0lUQ-zGW-t1ehRQzIQpwZGa3X8d3DU0L7",
-    client: "zhci_N2LaYV4Na37nvOzm13Q3F8N4nMWsIJe_QXhF2ToW",
+    key: "zhat_VuWPCQcW78XRw4ufLt3FTdJ8AIyGz5ff-q6jGLcG",
+    client: "zhci_5rSLVtpSHA28sk9Li2TpGRIVtSejhfIIRbRBkBgC",
     styleguide: 114183,
   };
 </script>
@@ -83,8 +83,8 @@ Make sure you include the `<script>` in your project (choose one of these):
 <!-- 3rd party CDN, not recommended for production use -->
 <script>
   const zhAPI = {
-    key: "zhat_6EuAaaw0lUQ-zGW-t1ehRQzIQpwZGa3X8d3DU0L7",
-    client: "zhci_N2LaYV4Na37nvOzm13Q3F8N4nMWsIJe_QXhF2ToW",
+    key: "zhat_VuWPCQcW78XRw4ufLt3FTdJ8AIyGz5ff-q6jGLcG",
+    client: "zhci_5rSLVtpSHA28sk9Li2TpGRIVtSejhfIIRbRBkBgC",
     styleguide: 114183,
   };
 </script>
