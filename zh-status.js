@@ -10,7 +10,7 @@ zhStatusTemplate.innerHTML = `
   </tr>
   <tr data-key="page">
     <td data-key="name"></td>
-    <td><mark data-key="new_status"></mark><del data-key="old_status"></del></td>
+    <td data-key="status_name"></td>
     <td data-key="created"></td>
     <td data-key="updated"></td>
   </tr>
@@ -47,9 +47,6 @@ class zhStatus extends HTMLElement {
 
     status.map((page, index) => {
       let data = pages[index];
-      data.created = this.formatDate(data.created_at);
-      data.updated = this.formatDate(data.updated_at);
-      data.name = data.name.replace("___cover", "Homepage");
 
       const pageSlots = slots.filter(
         (slot) => page.contains(slot) && slot !== page
@@ -84,21 +81,32 @@ class zhStatus extends HTMLElement {
   }
 
   async data() {
-    const { pages } = await this.fetch(
+    const data = await this.fetch(
       `https://zeroheight.com/open_api/v2/styleguides/${zhAPI.styleguide}/pages`
-    );
-    const { page_statuses } = await this.fetch(
-      `https://zeroheight.com/open_api/v2/page_statuses`
-    );
+    ).then((data) => {
+      return Promise.all(
+        data.pages.map(async (page) => {
+          const status = await this.fetch(
+            `https://zeroheight.com/open_api/v2/pages/${page.id}/status`
+          );
 
-    const data = pages.map((page) => {
-      return {
-        ...page,
-        ...page_statuses.find((status) => status.page_id === page.id),
-      };
+          return this.formatPageData(page, status);
+        })
+      );
     });
 
     return data;
+  }
+
+  formatPageData(page, status) {
+    return {
+      ...page,
+      created: this.formatDate(page.created_at),
+      updated: this.formatDate(page.updated_at),
+      name: page.name.replace("___cover", "Homepage"),
+      status_name: status.name,
+      status_id: status.id,
+    };
   }
 
   get slots() {
