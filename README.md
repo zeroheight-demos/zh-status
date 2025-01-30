@@ -2,7 +2,7 @@
 
 A Web Component for embedding design systems statuses on any page.
 
-**[Demo](https://zeroheight-demos.github.io/zh-statuss/demo.html)** | **[Further reading](https://zeroheight.com/blog/api-tutorial-add-page-statuses-to-any-website/)**
+**[Demo](https://zeroheight-demos.github.io/zh-status/demo.html)** | **[Further reading](https://zeroheight.com/blog/api-tutorial-add-page-statuses-to-any-website/)**
 
 ## Examples
 
